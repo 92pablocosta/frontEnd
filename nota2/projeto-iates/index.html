@@ -1,105 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luxo - Aluguel de iates</title>
-    <link rel="shortcut icon" href="images/barco2.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/default.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxo - Contato</title>
+  <link rel="shortcut icon" href="images/barco2.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/default.css" />
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/api.js"></script>
+</head>
 
-  <body>
-    <div class="page">
-    <header>
-      <div id="title">
-        <img src="images/barco1.png" alt="ícone de barco" />
-        <div class="headtitle">
-          <h1>Luxo</h1>
-          <h2>Aluguel de iates</h2>
-        </div>
+<body>
+<div class="page">
+  <header>
+    <div id="title">
+      <img src="images/barco1.png" alt="ícone de barco" />
+      <div class="headtitle">
+        <h1>Luxo</h1>
+        <h2>Aluguel de iates</h2>
       </div>
-
-      <nav>
-        <ul class="navmenu">
-          <li><a href="index.html" class="accent">Página inicial</a></li>
-          <li><a href="aluguel.html">Aluguel de iates</a></li>
-          <li><a href="destinos.html">Destinos</a></li>
-          <li><a href="tripulacao.html">Tripulação</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section id="principal">
-        <img src="images/barcoprincipal.jpg" alt="barco com pessoas" />
-        <div class="box">
-          <h2>Você só encontra coisas boas, se combinar luxo e paixão.</h2>
-          <div class="insidebox">
-            <img src="images/barco2.png" alt="ícone de barco" />
-            <p>
-              Ligue agora para agendar as férias de sua vida:
-              <span>(00) 8000-0000</span>
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div class="topics">
-        <section class="destinos">
-          <div class="subtitle">
-            <img src="images/destino.png" alt="ícone de leme" />
-            <h2>Destinos</h2>
-          </div>
-          <h3>Sou um título. Clique aqui para me editar.</h3>
-          <p>
-            Clique aqui para adicionar seu texto e me editar. É fácil. Basta
-            clicar em "Editar Texto" ou clicar duas vezes sobre mim e poderá
-            adicionar seu próprio conteúdo e mudar fontes. Sou um ótimo lugar
-            para contar sua história e permitir que seus visitantes saibam um
-            pouco mais sobre você.
-          </p>
-
-          <img
-            src="images/barcodestino.jpg"
-            alt="barcos numa praia com coqueiros"
-          />
-        </section>
-
-        <section class="frota">
-          <div class="subtitle">
-            <img src="images/nossafrota.png" alt="ícone de leme" />
-            <h2>Nossa frota</h2>
-          </div>
-          <h3>Sou um título. Clique aqui para me editar.</h3>
-          <p>
-            Clique aqui para adicionar seu texto e me editar. É fácil. Basta
-            clicar em "Editar Texto" ou clicar duas vezes sobre mim e poderá
-            adicionar seu próprio conteúdo e mudar fontes. Sou um ótimo lugar
-            para contar sua história e permitir que seus visitantes saibam um
-            pouco mais sobre você.
-          </p>
-
-          <div class="container">
-            <img src="images/barconossafrota2.jpg" alt="imagem de barco" />
-            <img
-              src="images/barconossafrota1.jpg"
-              alt="imagem de barco com vela"
-            />
-            <img
-              src="images/barconossafrota1.jpg"
-              alt="imagem de barco com vela"
-            />
-            <img src="images/barconossafrota2.jpg" alt="imagem de barco" />
-          </div>
-        </section>
-      </div>
-    </main>
     </div>
 
-    <footer>
-      <p>© 2023 por Luxo aluguel de iates</p>
-    </footer>
-  </body>
+    <nav>
+      <ul class="navmenu">
+        <li><a href="index.html">Página inicial</a></li>
+        <li><a href="aluguel.html">Aluguel de iates</a></li>
+        <li><a href="destinos.html">Destinos</a></li>
+        <li><a href="tripulacao.html">Tripulação</a></li>
+        <li><a href="contato.html" class="accent">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="pagtitle">
+      <div class="bgtitle"></div>
+      <h2>Entre em contato</h2>
+    </div>
+
+    <form>
+      <div class="entry">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" />
+      </div>
+
+      <div class="entry">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" />
+      </div>
+
+      <div class="entry">
+        <label for="msg">Mensagem</label>
+        <textarea cols="40" rows="7" id="msg"></textarea>
+      </div>
+    </form>
+
+    <div class="buttons">
+      <button id="btnEnviar" class="button">Enviar</button>
+    </div>
+  </main>
+</div>
+
+<footer>
+  <p>© 2023 por Luxo aluguel de iates</p>
+</footer>
+
+<script>
+  $(document).ready(function () {
+    // Função para enviar mensagem
+    $('#btnEnviar').click(function (event) {
+      event.preventDefault(); // Evita o comportamento padrão do botão
+
+      // Captura os valores dos campos
+      var nome = $('#nome').val();
+      var email = $('#email').val();
+      var mensagemTexto = $('#msg').val();
+
+      // Validação básica
+      if (!nome || !email || !mensagemTexto) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+      }
+
+      // Cria o objeto mensagem
+      var mensagem = {
+        nome: nome,
+        email: email,
+        mensagem: mensagemTexto,
+      };
+
+      // Envia a mensagem usando a função API
+      inserirMensagem(mensagem);
+
+      // Feedback ao usuário
+      alert('Mensagem enviada com sucesso!');
+      $('#nome').val('');
+      $('#email').val('');
+      $('#msg').val('');
+    });
+  });
+</script>
+</body>
 </html>

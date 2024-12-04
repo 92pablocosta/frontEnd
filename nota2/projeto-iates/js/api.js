@@ -1,3 +1,5 @@
+
+
 function obterMensagens() {
 
     var retorno = [];
