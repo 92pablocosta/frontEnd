@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas em JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .program {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Programas em JavaScript</h1>
+
+<!-- Calculadora -->
+<div class="program">
+    <h2>1. Calculadora</h2>
+    <p>Insira dois números e a operação desejada (soma, subtracao, multiplicacao, divisao).</p>
+    <input type="number" id="calcNum1" placeholder="Número 1">
+    <input type="number" id="calcNum2" placeholder="Número 2">
+    <input type="text" id="calcOperacao" placeholder="Operação">
+    <button onclick="calculadora()">Calcular</button>
+    <p id="calcResultado"></p>
+</div>
+
+<!-- Verificador de Palíndromo -->
+<div class="program">
+    <h2>2. Verificador de Palíndromo</h2>
+    <p>Digite uma palavra para verificar se é um palíndromo.</p>
+    <input type="text" id="palavra" placeholder="Digite uma palavra">
+    <button onclick="verificarPalindromo()">Verificar</button>
+    <p id="palindromoResultado"></p>
+</div>
+
+<!-- Lista de Tarefas -->
+<div class="program">
+    <h2>3. Lista de Tarefas</h2>
+    <p>Adicione tarefas e marque como concluída.</p>
+    <button onclick="gerenciarTarefas()">Gerenciar Tarefas</button>
+    <p id="tarefasResultado"></p>
+</div>
+
+<!-- Sistema de Notas -->
+<div class="program">
+    <h2>4. Sistema de Notas</h2>
+    <p>Veja a média de notas do aluno João.</p>
+    <button onclick="calcularMedia()">Calcular Média</button>
+    <p id="notasResultado"></p>
+</div>
+
+<!-- Tabela de Multiplicação -->
+<div class="program">
+    <h2>5. Tabela de Multiplicação</h2>
+    <p>Digite um número para ver sua tabela de multiplicação.</p>
+    <input type="number" id="tabelaNum" placeholder="Digite um número">
+    <button onclick="tabelaMultiplicacao()">Gerar Tabela</button>
+    <p id="tabelaResultado"></p>
+</div>
+
+<!-- Verificador de Idade -->
+<div class="program">
+    <h2>6. Verificador de Idade</h2>
+    <p>Verifique quem tem mais de 18 anos.</p>
+    <button onclick="verificarIdade()">Verificar</button>
+    <p id="idadeResultado"></p>
+</div>
+
+<!-- Estoque de Produtos -->
+<div class="program">
+    <h2>7. Estoque de Produtos</h2>
+    <p>Veja o valor total do estoque.</p>
+    <button onclick="calcularEstoque()">Calcular Estoque</button>
+    <p id="estoqueResultado"></p>
+</div>
+
+<!-- Script externo -->
+<script src="script.js"></script>
+</body>
+</html>
